@@ -4,19 +4,16 @@ document.getElementById('down-button-1').addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
-window.onscroll = function() {
-    var subir = document.getElementById("subir");
-    
-    // Si el usuario está cerca del final de la página, mostrar el botón
-    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 100) {
-        subir.style.display = "block";
-        document.getElementById("subir").addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // Desplazamiento suave
-            });
-        });
+window.addEventListener('scroll', function() {
+    // Obtiene la altura total de la página
+    var scrollHeight = document.documentElement.scrollHeight;
+    // Obtiene la posición del scroll vertical actual
+    var scrollPosition = window.innerHeight + window.scrollY;
+
+    // Si el usuario ha llegado al final de la página
+    if (scrollPosition >= scrollHeight) {
+        document.getElementById('upButton').style.display = 'block';
     } else {
-        subir.style.display = "none";
+        document.getElementById('upButton').style.display = 'none';
     }
-};
+});

@@ -95,20 +95,11 @@ nav ul li a:hover {
     background-color: #FFFFFF;
     cursor: pointer;
 }
-#subir {
-    display: none; /* Oculto inicialmente */
-    position: fixed; /* Fijo para que siempre esté en la pantalla */
-    bottom: 20px; /* Espacio desde la parte inferior */
-    right: 20px; /* Espacio desde la parte derecha */
-    z-index: 1000; /* Para asegurarse de que esté encima de todos los elementos */
-    background-color: #333; /* Color de fondo */
-    color: white; /* Color del texto (la flecha) */
-    border: none; /* Sin bordes */
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 20px; /* Tamaño de la flecha */
+
+#upButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000; /* Asegura que el SVG esté por encima de otros elementos */
     cursor: pointer;
-}
-#subir:hover {
-    background-color: #555; /* Color al pasar el ratón */
 }
