@@ -105,3 +105,19 @@ nav ul li a:hover {
 #upButton.show {
     opacity: 1; /* El SVG será completamente visible cuando se aplique esta clase */
 }
+#ccdoc-banner-section {
+    position: relative;
+    width: 100vw;
+}
+#ccdoc-banner-base {
+    width: 100%;
+    object-fit: cover; /* Para cubrir el contenedor sin deformar */
+}
+#ccdoc-banner-overlay {
+    position: absolute;
+    top: 80%;       /* Centrado vertical */
+    left: 90%;      /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Para ajustar el centro exacto */
+    width: 20%;   /* Tamaño de la imagen que va encima */
+    height: auto;
+}
