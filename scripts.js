@@ -12,8 +12,13 @@ window.addEventListener('scroll', function() {
 
     // Si el usuario ha llegado al final de la página
     if (scrollPosition >= scrollHeight) {
-        document.getElementById('upButton').style.display = 'block';
+        document.getElementById('upButton').classList.add('show');
+        // Añadir un evento de clic al triángulo de subir
+        document.getElementById('upButton').addEventListener('click', function() {
+            // Usar scrollTo para mover la página al principio
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
     } else {
-        document.getElementById('upButton').style.display = 'none';
+        document.getElementById('upButton').classList.remove('show');
     }
 });

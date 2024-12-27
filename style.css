@@ -95,11 +95,15 @@ nav ul li a:hover {
     background-color: #FFFFFF;
     cursor: pointer;
 }
-
 #upButton {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000; /* Asegura que el SVG esté por encima de otros elementos */
     cursor: pointer;
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
+}
+#upButton.show {
+    opacity: 1; /* El SVG será completamente visible cuando se aplique esta clase */
 }
