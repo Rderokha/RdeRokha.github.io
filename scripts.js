@@ -4,6 +4,12 @@ document.getElementById('down-button-1').addEventListener('click', function() {
         behavior: 'smooth'
     });
 });
+document.getElementById('ccdoc-box').addEventListener('click', function() {
+    var destino = document.getElementById('ccdoc');
+    destino.scrollIntoView({
+        behavior: 'smooth'
+    });
+});
 window.addEventListener('scroll', function() {
     const targetElement = document.getElementById('content-1');
     const rect = targetElement.getBoundingClientRect();
