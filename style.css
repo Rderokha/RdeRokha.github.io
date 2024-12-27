@@ -62,7 +62,7 @@ nav ul li a:hover {
     line-height: 2em;
     letter-spacing: 0.03em;
 }
-.presentation {
+#presentation {
     padding-block: 10vh;
     padding-inline: 33vw;
 }
@@ -116,8 +116,11 @@ nav ul li a:hover {
 #ccdoc-banner-overlay {
     position: absolute;
     top: 80%;       /* Centrado vertical */
-    left: 90%;      /* Centrado horizontal */
+    left: 93%;      /* Centrado horizontal */
     transform: translate(-50%, -50%); /* Para ajustar el centro exacto */
-    width: 20%;   /* Tamaño de la imagen que va encima */
+    width: 10%;   /* Tamaño de la imagen que va encima */
     height: auto;
+}
+#ccdoc-description-section {
+    padding-inline: 5vw;
 }

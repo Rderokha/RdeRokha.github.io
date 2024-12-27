@@ -5,20 +5,23 @@ document.getElementById('down-button-1').addEventListener('click', function() {
     });
 });
 window.addEventListener('scroll', function() {
-    // Obtiene la altura total de la página
-    var scrollHeight = document.documentElement.scrollHeight;
-    // Obtiene la posición del scroll vertical actual
-    var scrollPosition = window.innerHeight + window.scrollY;
-
-    // Si el usuario ha llegado al final de la página
-    if (scrollPosition >= scrollHeight) {
+    const targetElement = document.getElementById('content-1');
+    const rect = targetElement.getBoundingClientRect();
+    if (rect.bottom < 0) {
         document.getElementById('upButton').classList.add('show');
         // Añadir un evento de clic al triángulo de subir
         document.getElementById('upButton').addEventListener('click', function() {
-            // Usar scrollTo para mover la página al principio
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Obtener el elemento con el id "content-1"
+            const element = document.getElementById("content-1");
+
+            // Obtener la posición vertical del elemento en relación con el documento
+            const topPosition = element.offsetTop;
+
+            // Realizar el desplazamiento suave hasta el elemento
+            window.scrollTo({ top: topPosition, behavior: 'smooth' });
         });
     } else {
         document.getElementById('upButton').classList.remove('show');
     }
 });
+
