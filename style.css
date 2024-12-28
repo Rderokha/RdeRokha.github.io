@@ -122,7 +122,9 @@ nav ul li a:hover {
     height: auto;
 }
 #ccdoc-idfa-catalog-description {
-    padding-inline: 5vw;
+    padding-inline: 15vw;
+    margin-block: 10vh;
+    text-align: justify;
 }
 #ccdoc-idfa-catalog-section {
     display: flex;
@@ -176,4 +178,29 @@ nav ul li a:hover {
 #ccdoc-idfa-catalog-preview-2 input[type="radio"]:checked + label img {
     opacity: 1; /* Hace que la imagen seleccionada sea totalmente opaca */
     outline: 5px solid #696969; /* Resalta la imagen seleccionada */
+}
+#ccdoc-idfa-title-container {
+    margin-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+#ccdoc-idfa-title {
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#ccdoc-idfa-catalog-title-container {
+    margin-top: 8vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 33vw; 
+    background-color: #2098CC;
+    border-radius: 0 35px 35px 0;
+}
+#ccdoc-idfa-catalog-title {
+    margin-block: 2vh;
+    margin-right: 1.5vw;
 }
