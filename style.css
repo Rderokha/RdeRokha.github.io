@@ -63,8 +63,8 @@ nav ul li a:hover {
     letter-spacing: 0.03em;
 }
 #presentation {
-    padding-block: 10vh;
-    padding-inline: 33vw;
+    margin-block: 10vh;
+    margin-inline: 33vw;
 }
 .description {
     margin: 0;
@@ -72,7 +72,7 @@ nav ul li a:hover {
 .down-button-container{
     display: flex;
     justify-content: center;
-    padding-block: 3vh;
+    margin-block: 3vh;
 }
 .down-button {
     cursor: pointer;
@@ -82,6 +82,7 @@ nav ul li a:hover {
     height: 100vh;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); 
+    margin-bottom: 8vh;
 }
 .box{
     background-color: #D9D9D9;
@@ -108,6 +109,7 @@ nav ul li a:hover {
 #ccdoc-banner-section {
     position: relative;
     width: 100vw;
+    margin-bottom: 8vh;
 }
 #ccdoc-banner-base {
     width: 100%;
@@ -121,16 +123,21 @@ nav ul li a:hover {
     width: 10%;   /* Tamaño de la imagen que va encima */
     height: auto;
 }
-#ccdoc-idfa-catalog-description {
-    padding-inline: 15vw;
-    margin-block: 10vh;
+.description-section {
+    margin-inline: 20vw;
+    margin-bottom: 8vh;
     text-align: justify;
+}
+.description-text {
+    font-weight: 300;
+    font-size: 1.5em;
 }
 #ccdoc-idfa-catalog-section {
     display: flex;
-    padding-inline: 5vw;
+    margin-inline: 8vw;
     gap: 5vw;
-    height: 60%;
+    max-height: 60vh;
+    margin-bottom: 8vh;
 }
 #ccdoc-idfa-catalog-view {
     position: relative;
@@ -138,31 +145,35 @@ nav ul li a:hover {
 }
 #ccdoc-idfa-catalog-view-base {
     object-fit: cover;
-    height: 100%;
+    width: 100%;
+    max-height: 100%;
 }
 #ccdoc-idfa-catalog-view-overlay {
     position: absolute;
     display: none;
 }
 #ccdoc-idfa-catalog-preview {
-    flex: 4;
+    flex: 3;
     display: flex;
     flex-direction: column;
     max-height: 100%;
     gap: 5%;
 }
 #ccdoc-idfa-catalog-preview div {
-    max-height: 100%;
+    height: 100%;
 }
 #ccdoc-idfa-catalog-preview div img{
-    height: 100%;
-    max-width: 100%;
+    width: 100%;
+    display: block;
+    max-height: 100%;
 }
 #ccdoc-idfa-catalog-preview-1 {
     height: 47.5%;
+    width: 100%;
 }
 #ccdoc-idfa-catalog-preview-1 label img{
     cursor: pointer;
+    display: block;
 }
 #ccdoc-idfa-catalog-preview-1 input[type="radio"]:checked + label img {
     opacity: 1; /* Hace que la imagen seleccionada sea totalmente opaca */
@@ -180,7 +191,7 @@ nav ul li a:hover {
     outline: 5px solid #696969; /* Resalta la imagen seleccionada */
 }
 #ccdoc-idfa-title-container {
-    margin-top: 8vh;
+    margin-bottom: 8vh;
     display: flex;
     justify-content: center;
     align-items: center; 
@@ -191,8 +202,8 @@ nav ul li a:hover {
     align-items: center;
     justify-content: flex-start;
 }
-#ccdoc-idfa-catalog-title-container {
-    margin-top: 8vh;
+.title-1-container {
+    margin-bottom: 8vh;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -200,7 +211,27 @@ nav ul li a:hover {
     background-color: #2098CC;
     border-radius: 0 35px 35px 0;
 }
-#ccdoc-idfa-catalog-title {
+.title-1-div {
     margin-block: 2vh;
     margin-right: 1.5vw;
+}
+.title-1-text {
+    font-weight: 600; 
+    font-size: 2em; 
+    font-style: italic; 
+    color: #FFFFFF;
+}
+#ccdoc-idfa-rrss-1-section {
+    display: flex;
+    justify-content: space-between;  /* Distribuye las columnas de manera uniforme */
+    align-items: center;  /* Centra el contenido de las columnas verticalmente */
+    margin-inline: 8vw;
+    margin-bottom: 5vh;
+}
+#ccdoc-idfa-rrss-2-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    margin-inline: 8vw;
+    margin-bottom: 8vh;
 }
