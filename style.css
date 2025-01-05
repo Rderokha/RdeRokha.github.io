@@ -190,7 +190,7 @@ nav ul li a:hover {
     opacity: 1; /* Hace que la imagen seleccionada sea totalmente opaca */
     outline: 5px solid #696969; /* Resalta la imagen seleccionada */
 }
-#ccdoc-idfa-title-container {
+.title-1-container {
     margin-bottom: 8vh;
     display: flex;
     justify-content: center;
@@ -202,7 +202,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: flex-start;
 }
-.title-1-container {
+.title-2-container {
     margin-bottom: 8vh;
     display: flex;
     justify-content: right;
