@@ -76,6 +76,11 @@ nav ul li a:hover {
 }
 .down-button {
     cursor: pointer;
+    opacity: 50%;
+    transition: opacity 0.5s ease-in-out;
+}
+.down-button:hover {
+    opacity: 100%;
 }
 .content {
     display: grid;
@@ -104,7 +109,10 @@ nav ul li a:hover {
     transition: opacity 0.5s ease-in-out; /* Transición suave de opacidad */
 }
 #upButton.show {
-    opacity: 1; /* El SVG será completamente visible cuando se aplique esta clase */
+    opacity: 50%; /* El SVG será completamente visible cuando se aplique esta clase */
+}
+#upButton:hover {
+    opacity: 100%;
 }
 #ccdoc-banner-section {
     position: relative;
@@ -196,26 +204,25 @@ nav ul li a:hover {
     justify-content: center;
     align-items: center; 
 }
-#ccdoc-idfa-title {
+.title-1-div {
     height: 18vh;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 .title-2-container {
-    margin-bottom: 8vh;
-    display: flex;
-    justify-content: right;
+    display: inline-block;
     align-items: center;
-    width: 33vw; 
+    width: auto;
     background-color: #2098CC;
     border-radius: 0 35px 35px 0;
 }
-.title-1-div {
+.title-2-div {
     margin-block: 2vh;
+    margin-left: 20vw;
     margin-right: 1.5vw;
 }
-.title-1-text {
+.title-2-text {
     font-weight: 600; 
     font-size: 2em; 
     font-style: italic; 
