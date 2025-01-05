@@ -259,17 +259,8 @@ nav ul li a:hover {
     margin-inline: 8vw;
     margin-bottom: 8vh;
 }
-#ccdoc-conecta-rrss-1-section {
-    display: flex;
-    justify-content: space-between;  /* Distribuye las columnas de manera uniforme */
-    align-items: center;  /* Centra el contenido de las columnas verticalmente */
+#ccdoc-conecta-rrss-section {
+    align-items: center;
     margin-inline: 8vw;
-    margin-top: 8vh;
-}
-#ccdoc-conecta-rrss-2-section {
-    display: flex;
-    justify-content: space-between;  /* Distribuye las columnas de manera uniforme */
-    align-items: center;  /* Centra el contenido de las columnas verticalmente */
-    margin-inline: 8vw;
-    margin-bottom: 8vh;
+    margin-block: 8vh;
 }
